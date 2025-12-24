@@ -17,24 +17,32 @@
 
 ## インストール方法
 
-1. リポジトリをクローン：
+## 1. リポジトリをクローン：
+
 ```bash
 git clone https://github.com/Sohey-k/juniper-syslog-generator.git
 cd juniper-syslog-generator
+```
 
-2. （任意）仮想環境を作成：
+## 2. （任意）仮想環境を作成：
+
+```bash
 python3 -m venv venv
 source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
-'''
+```
 
-3. 依存パッケージをインストール（必要な場合）：
+## 3. 依存パッケージをインストール（必要な場合）：
+```bash
 pip install -r requirements.txt
+```
 
 ## 使い方
 
-1. スクリプトを実行:
+### 1. スクリプトを実行:
+```bash
 python generate_logs.py -o output_logs -d 2025-04-28 -H srx-fw01 -r 5000 -t 0.1
+```
 
 ## 引数
 
