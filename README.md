@@ -26,6 +26,7 @@ cd juniper-syslog-generator
 python3 -m venv venv
 source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
+'''
 
 3. 依存パッケージをインストール（必要な場合）：
 pip install -r requirements.txt
@@ -49,4 +50,4 @@ python generate_logs.py -o output_logs -d 2025-04-28 -H srx-fw01 -r 5000 -t 0.1
 
 ## 実行例
 
-スクリプト実行後、output_logs/ ディレクトリに 24 時間分の ZIP ファイルと日次 ZIP が生成されます。
+スクリプト実行後、output_logs/ ディレクトリに 24 時間分の ZIP ファイルが生成されます。
